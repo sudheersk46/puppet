@@ -1,3 +1,0 @@
-package {'anydesk'
-ensure => 'absent'
-}
