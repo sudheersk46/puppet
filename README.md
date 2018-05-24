@@ -1,0 +1,1 @@
+# .pp 'puppet program' (manifest)
