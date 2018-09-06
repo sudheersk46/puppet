@@ -1,4 +1,4 @@
-#node 'ixed-lap0125' {
+#node 'testlap' {
 #file { '/tmp/gdebi_0.9.5.7_all.deb':
 #    ensure => directory,
 #     mode => '0777',
@@ -6,7 +6,7 @@
 #}
 #package { 'gdebi':
 #          ensure          => installed,
-#          source          => "puppet:///home/superuser/Downloads/gdebi_0.9.5.7_all.deb",
+#          source          => "puppet:///tmp/gdebi_0.9.5.7_all.deb",
 #          install_options => [ ' -i ']
 # }
 #}
@@ -15,8 +15,8 @@ file { "/tmp/gdebighhhhhh.deb":
   source => "puppet:///modules/deb/gdebi_0.9.5.7_all.deb",
   recurse => 'remote',
 #  path => '/etc/puppetlabs/code/modules',
-#  owner => 'superuser',
-#  group => 'superuser',
+#  owner => 'user',
+#  group => 'user',
   mode  => '0777', # Use 0700 if it is sensitive
 }
 
